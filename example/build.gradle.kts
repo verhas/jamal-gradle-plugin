@@ -11,4 +11,5 @@ repositories {
 }
 
 JamalConvertFile {
+    inputFile = file("../TEST.adoc.jam")
 }

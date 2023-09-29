@@ -1,0 +1,1 @@
+{%@define a=This comes from Jamal%}{%a%}
