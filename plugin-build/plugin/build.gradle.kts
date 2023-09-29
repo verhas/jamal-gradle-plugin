@@ -9,6 +9,14 @@ plugins {
 dependencies {
     implementation(kotlin("stdlib"))
     implementation(gradleApi())
+    listOf(
+        "engine", "api", "tools", "core", "assertions", "jamal", "markdown",
+        "mock", "plantuml", "snippet", "yaml", "json", "prog", "maven-load",
+        "groovy", "io", "openai", "ruby", "scriptbasic", "word", "java",
+        "debug", "maven-input", "jar-input"
+    ).forEach() {
+        implementation("com.javax0.jamal:jamal-$it:2.4.0")
+    }
 
     testImplementation(libs.junit)
 }

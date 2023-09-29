@@ -9,6 +9,7 @@ dependencyResolutionManagement {
     repositories {
         mavenCentral()
         google()
+        maven(url = "https://jitpack.io/")
     }
 }
 
@@ -25,7 +26,7 @@ gradleEnterprise {
     }
 }
 
-rootProject.name = "kotlin-gradle-plugin-template"
+rootProject.name = "jamal-gradle-plugin"
 
 include(":example")
 includeBuild("plugin-build")

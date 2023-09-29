@@ -1,8 +1,14 @@
+
 plugins {
     java
-    id("com.ncorti.kotlin.gradle.template.plugin")
+    id("jamal-gradle-plugin") version "1.0.0-SNAPSHOT"
 }
 
-templateExampleConfig {
-    message.set("Just trying this gradle plugin...")
+repositories {
+    mavenCentral()
+    google()
+    maven(url = "https://jitpack.io/")
+}
+
+JamalConvertFile {
 }
